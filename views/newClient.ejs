@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="newClient">
+    <% layout('layout') %>
+    <h1>Ajouter un Nouveau Client</h1>
+    </section>
+    
+    <form action="/clients" method="POST">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required><br>
+    
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required><br>
+    
+      <label for="type_assurance">Type d'Assurance :</label>
+      <select id="type_assurance" name="type_assurance">
+        <option value="automobile">Automobile</option>
+        <option value="maison">Maison</option>
+      </select><br>
+    
+      <button type="submit">Ajouter</button>
+    </form>
+    
+</body>
+</html>

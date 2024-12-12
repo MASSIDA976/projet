@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de l'inscription</title>
+</head>
+<body>
+    <!-- Inclusion du menu -->
+    <%- include('menu') %>
+
+    <h1>Confirmation</h1>
+    <p>Merci pour votre inscription, <%= nom %> !</p>
+    <p>Email : <%= email %></p>
+    <p>Téléphone : <%= telephone %></p>
+    <p>Type d'Assurance : <%= typeAssurance === 'auto' ? 'Assurance Automobile' : 'Assurance Maison' %></p>
+    
+    <a href="/">Retour à l'accueil</a>
+</body>
+</html>
